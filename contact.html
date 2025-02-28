@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dasmariñas City</title>
+  <style>
+
+    /* unique */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #41B74D;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #36a44a; 
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="_1395131474-10.png" alt="Dasmariñas City Logo" />
+    <h1>DASMARIÑAS CITY</h1>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="history.html">HISTORY</a>
+      <a href="university.html">UNIVERSITIES</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+    
+  </header>
+  
+  <main class="content">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, comments, or suggestions, please feel free to reach out to us using the form below:</p>
+    
+    <form action="contactform.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <input type="submit" value="Send Message">
+  </form>
+  
+  <footer>
+    <p>© 2025 Dasmariñas City. All rights reserved.</p>
+  </footer>
+</body>
+</html>

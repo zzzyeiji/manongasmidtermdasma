@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dasmariñas City</title>
+  <style>
+
+    .universities {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .university {
+      text-align: center;
+    }
+
+    .university img {
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover; 
+      border-radius: 5px; 
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="_1395131474-10.png" alt="Dasmariñas City Logo" />
+    <h1>DASMARIÑAS CITY</h1>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="history.html">HISTORY</a>
+      <a href="university.html">UNIVERSITIES</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+  </header>
+  
+  <main class="content">
+    <h2>Universities in Dasmariñas</h2>
+    <div class="universities">
+      <div class="university">
+        <img src="dlsu.jpg" alt="De La Salle University – Dasmariñas" />
+        <h3>De La Salle University</h3>
+      </div>
+      <div class="university">
+        <img src="nu.jpg" alt="National University Dasmarinas" />
+        <h3>National University</h3>
+      </div>
+      <div class="university">
+        <img src="pcu.jpg" alt="Philippine Christian University - Cavite" />
+        <h3>Philippine Christian University</h3>
+      </div>
+      <div class="university">
+        <img src="tup.jpg" alt="Technological University of the Philippines – Cavite" />
+        <h3>Technological University of the Philippines</h3>
+      </div>
+      <div class="university">
+        <img src="csu.jpg" alt="Cavite State University - Dasmariñas Learning Center" />
+        <h3>Cavite State University</h3>
+      </div>
+      <div class="university">
+        <img src="up.png" alt="University of the Philippines Dasmariñas" />
+        <h3>University of the Philippines</h3>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2025 Dasmariñas City. All rights reserved.</p>
+  </footer>
+</body>
+</html>
